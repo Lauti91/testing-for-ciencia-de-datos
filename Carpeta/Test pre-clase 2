@@ -76,3 +76,8 @@ sum(valores)
 mean(valores)
 length(valores)
 class(valores)
+
+# Prueba para ver si se guarda bien en la Carpeta
+
+Gatos <- list("Lara", Color = "Negro", Caracter = "Amargado", "Negro", Color = "Blanco", Caracter = "Cariñoso")
+Gatos$Color
