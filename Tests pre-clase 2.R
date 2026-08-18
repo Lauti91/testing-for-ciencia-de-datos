@@ -1,0 +1,78 @@
+#VARIABLES DE ASIGNACIÓN
+
+x<-5
+y<-1
+nombre<-"Lautaro"
+
+x + y
+nombre 
+
+#TIPOS DE DATOS
+
+n <- 42 # numeric (double)
+i <- 42L # integer (la L le dice a R que es entero)
+t <- "hola" # character (string)
+l <- TRUE # logical (booleano)
+
+class(n) # "numeric"
+class(t) # "character"
+class(l) # "logical"
+class(i)
+# class() es la función que se usa para preguntarle a R "qué tipo de dato es esto?"
+
+#VECTORES
+# Un vector es una secuencia de elementos del mismo tipo. se crea con c() (combine)
+
+edades <- c(20, 22, 19, 25, 17, 15, 34)
+nombres <- c("Ana", "Pedro", "Caro", "Simón", "Beto")
+
+edades[1] # En R se indexa desde 1, no desde 0
+edades[2:3] # Subconjunto por rango
+edades[4]
+
+# Operaciones vectorizadas (a todos los elementos del vector)
+edades + 1
+(edades + 2) * 2
+sqrt(edades + 5)
+
+#LISTAS
+# Una lista mezcla distintos tipos (numeros, strings, incluso otros vectores o listas adentro)
+
+persona <- list(nombre = "Lontario", edad = 21, aprobado = TRUE, peliculas_favoritas = c("phantom thread", "in the mood for love", "avengers"))
+
+
+persona$nombre
+persona[[2]]
+persona$peliculas_favoritas[-2] #exclusión por indexación negativa
+persona$peliculas_favoritas[persona$peliculas_favoritas != "avengers"]
+#exclusión por valor
+
+#OPERADORES 
+
+#Aritméticos
+
+5 + 3; 5 - 3; 5 * 3; 5 / 3; 5 %% 3 # %% es el resto de la división
+5 ^ 3
+
+#Comparación
+
+5 > 3
+5 == 3
+5 != 3
+
+#Lógicos
+
+TRUE & TRUE #AND 
+TRUE | FALSE #OR
+!TRUE #NOT
+
+#OPERADORES BÁSICOS
+
+valores <- c(4, 6, 7, 10, 65, 201)
+valores <- c(sample.int(30, size = 10, replace = FALSE))
+valores
+
+sum(valores)
+mean(valores)
+length(valores)
+class(valores)
