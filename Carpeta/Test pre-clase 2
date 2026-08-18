@@ -81,3 +81,9 @@ class(valores)
 
 Gatos <- list("Lara", Color = "Negro", Caracter = "Amargado", "Negro", Color = "Blanco", Caracter = "Cariñoso")
 Gatos$Color
+
+
+Valery <- list("molesta", "se ríe fuerte", "pega mucho cuando se enoja")
+
+
+
