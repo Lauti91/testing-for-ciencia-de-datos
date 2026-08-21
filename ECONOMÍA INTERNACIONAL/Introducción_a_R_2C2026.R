@@ -114,6 +114,7 @@ comtrade <- comtrade |>
   filter(cuci != " Total")
 
 comtrade
+
 View(comtrade) #Una forma mucho mejor de observar la dataset.
 
 #tidyverse contiene, como mencion?, a dplyr. La librer?a que m?s usaremos en el curso (y probablemente el resto de sus vidas).
